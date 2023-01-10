@@ -1,1 +1,1 @@
-This is todo project with React.js
+This is task project with React.js

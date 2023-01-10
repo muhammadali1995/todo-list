@@ -3,16 +3,16 @@ import {
   createBrowserRouter, RouterProvider
 } from "react-router-dom";
 import { Routes } from "./constants/routes";
-import { TodoContextProvider } from "./state/todo-context";
+import { TaskContextProvider } from "./state/task-context";
 
 const router = createBrowserRouter(Routes);
 
 
 function App() {
   return (
-    <TodoContextProvider>
+    <TaskContextProvider>
       <RouterProvider router={router} />
-    </TodoContextProvider>
+    </TaskContextProvider>
   );
 }
 

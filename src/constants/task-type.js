@@ -1,4 +1,4 @@
-export const todoStatus = {
+export const taskStatus = {
     COMPLETE: 'complete',
     TODO: 'todo'
 }

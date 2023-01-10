@@ -1,7 +1,7 @@
 import About from "../pages/About";
-import Completed from "../pages/Completed";
+import CompletedList from "../pages/CompletedList";
 import Home from "../pages/Home";
-import Todo from "../pages/Todo";
+import TaskList from "../pages/TaskList";
 
 export const Routes = [
     {
@@ -10,11 +10,11 @@ export const Routes = [
         children: [
             {
                 path: "",
-                element: <Todo />,
+                element: <TaskList />,
             },
             {
-                path: "/completed",
-                element: <Completed />,
+                path: "/completed-list",
+                element: <CompletedList />,
             },
             {
                 path: "/about",

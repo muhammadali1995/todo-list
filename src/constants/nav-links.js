@@ -1,11 +1,11 @@
 export const navLinks = [
     {
-        title: 'Todo',
+        title: 'Task List',
         route: '/'
     },
     {
-        title: 'Completed',
-        route: '/completed'
+        title: 'Completed List',
+        route: '/completed-list'
     },
      {
         title: 'About',

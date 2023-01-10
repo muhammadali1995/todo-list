@@ -1,15 +1,15 @@
 import { useContext, useEffect } from "react";
 import { Outlet } from "react-router-dom";
 import Navbar from "../components/navbar";
-import { TodoContext } from "../state/todo-context";
-import { initialState } from "../state/todo-reducer";
+import { TaskContext } from "../state/task-context";
+import { initialState } from "../state/task-reducer";
 
 export default function Home() {
-    const { loadTodos } = useContext(TodoContext)
+    const { loadTasks } = useContext(TaskContext)
 
     useEffect(() => {
-        const todoState = JSON.parse(localStorage.getItem('my_todo_items')) || initialState
-        loadTodos(todoState)
+        const taskState = JSON.parse(localStorage.getItem('my_tasks')) || initialState
+        loadTasks(taskState)
     }, [])
 
     return <div className="flex flex-col items-center">
@@ -19,5 +19,3 @@ export default function Home() {
         </div>
     </div>
 }
-
-
