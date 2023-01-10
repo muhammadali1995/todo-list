@@ -24,11 +24,11 @@ export const taskReducer = (state, action) => {
                 localStorage.setItem('my_tasks', JSON.stringify(newState))
                 return newState
             }
-        case "complete":
+        case "update":
             {
                 const idx = state.tasks.findIndex(t => t.id === action.task.id);
                 const task = Object.assign({}, state.tasks[idx]);
-                task.status = 'complete';
+                task.status = action.task.status;
                 const tasks = Object.assign([], state.tasks);
                 tasks.splice(idx, 1, task);
 
@@ -50,6 +50,7 @@ export const taskReducer = (state, action) => {
                     counter: state.counter,
                     tasks: tasks,
                 };
+
                 localStorage.setItem('my_tasks', JSON.stringify(updatedState))
 
                 return updatedState

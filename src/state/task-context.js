@@ -14,11 +14,15 @@ export const TaskContextProvider = ({ children }) => {
         dispatch({ type: 'load', taskState })
     }
 
-    const completeTask = (task) => {
-        dispatch({ type: 'complete', task })
+    const updateTask = (task) => {
+        dispatch({ type: 'update', task })
     }
 
-    return <TaskContext.Provider value={{ taskState, dispatch, createTask, completeTask, loadTasks }}>
+    const removeTask = (task) => {
+        dispatch({ type: 'remove', task })
+    }
+
+    return <TaskContext.Provider value={{ taskState, dispatch, createTask, updateTask, loadTasks, removeTask }}>
         {children}
     </TaskContext.Provider>
 }

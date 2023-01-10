@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import TaskItem from "../components/task-item";
+import CompletedTaskItem from "../components/completed-item";
 import { TaskContext } from "../state/task-context";
 
 export default function CompletedList() {
@@ -14,7 +14,7 @@ export default function CompletedList() {
     return (
         <div className="flex items-center flex-col">
             {completedTasks.map(task => {
-                return <TaskItem key={task.id} task={task} />
+                return <CompletedTaskItem key={task.id} task={task} />
             })}
         </div>
     )
