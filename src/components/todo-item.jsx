@@ -1,4 +1,4 @@
-import { useContext, useState } from "react"
+import { useContext } from "react"
 import { todoStatus } from "../constants/todo-type"
 import { TodoContext } from "../state/todo-context"
 
