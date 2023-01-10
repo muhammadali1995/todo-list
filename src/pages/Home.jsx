@@ -14,6 +14,8 @@ export default function Home() {
 
     return <div className="flex flex-col items-center">
         <Navbar />
-        <Outlet />
+        <div className="mt-5">
+            <Outlet />
+        </div>
     </div>
 }

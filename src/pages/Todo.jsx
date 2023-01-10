@@ -8,7 +8,7 @@ export default function Todo() {
 
     return <>
         <AddTodo createTodo={createTodo} />
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center max-h-[50rem] overflow">
             {todoState.todos?.map(todo => <TodoItem key={todo.id} todo={todo} />)}
         </div>
     </>
