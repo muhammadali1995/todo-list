@@ -9,7 +9,7 @@ export const TaskContextProvider = ({ children }) => {
     const createTask = (task) => {
         dispatch({ type: 'add', task })
     }
-    
+
     const loadTasks = (taskState) => {
         dispatch({ type: 'load', taskState })
     }
@@ -22,7 +22,10 @@ export const TaskContextProvider = ({ children }) => {
         dispatch({ type: 'remove', task })
     }
 
-    return <TaskContext.Provider value={{ taskState, dispatch, createTask, updateTask, loadTasks, removeTask }}>
+    return <TaskContext.Provider
+        value={{
+            taskState, dispatch, createTask, updateTask, loadTasks, removeTask
+        }}>
         {children}
     </TaskContext.Provider>
 }

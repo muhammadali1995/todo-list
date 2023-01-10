@@ -2,7 +2,7 @@
 import {
   createBrowserRouter, RouterProvider
 } from "react-router-dom";
-import { Routes } from "./constants/routes";
+import { Routes } from "./routes";
 import { TaskContextProvider } from "./state/task-context";
 
 const router = createBrowserRouter(Routes);

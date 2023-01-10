@@ -4,6 +4,7 @@ import { TaskContext } from "../state/task-context"
 
 export default function TaskItem({ task }) {
     const { updateTask } = useContext(TaskContext)
+   
     const onUpdate = () => {
         const updatedTask = task
 

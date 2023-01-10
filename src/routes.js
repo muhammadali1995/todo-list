@@ -1,12 +1,12 @@
-import About from "../pages/About";
-import CompletedList from "../pages/CompletedList";
-import Home from "../pages/Home";
-import TaskList from "../pages/TaskList";
+import About from "./pages/About";
+import CompletedList from "./pages/CompletedList";
+import Container from "./components/container";
+import TaskList from "./pages/TaskList";
 
 export const Routes = [
     {
         path: '/',
-        element: <Home />,
+        element: <Container />,
         children: [
             {
                 path: "",

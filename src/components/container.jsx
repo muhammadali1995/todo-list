@@ -1,10 +1,10 @@
 import { useContext, useEffect } from "react";
 import { Outlet } from "react-router-dom";
-import Navbar from "../components/navbar";
+import Navbar from "./navbar";
 import { TaskContext } from "../state/task-context";
 import { initialState } from "../state/task-reducer";
 
-export default function Home() {
+export default function Container() {
     const { loadTasks } = useContext(TaskContext)
 
     useEffect(() => {
