@@ -18,7 +18,7 @@ export const todoReducer = (state, action) => {
                 };
                 const newState = {
                     counter: newCounter,
-                    todos: [...state.todos, newTodo],
+                    todos: [newTodo, ...state.todos],
                 };
 
                 localStorage.setItem('my_todo_items', JSON.stringify(newState))
