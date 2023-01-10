@@ -1,7 +1,7 @@
 import About from "../pages/About";
 import Completed from "../pages/Completed";
-import Home from "../pages/Home";
-import Todo from "../pages/Todo";
+import Home from "../pages/Homes";
+import Todo from "../pages/Todos";
 
 export const Routes = [
     {
