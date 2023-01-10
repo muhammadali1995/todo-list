@@ -8,9 +8,9 @@ export default function About() {
             <ul>
                 <li>
                     <a className="text-blue-500" href="https://reactrouter.com/">React router v6</a>
-                    <p>
+                    <div>
                         It helped to build the routing. I have implemented nested routes in the following way:
-                        <h2 className="font-bold">Home</h2>
+                        <span className="font-bold">Home</span>
                         <ul className="ml-5">
                             <li className="font-bold">
                                 Task List
@@ -19,7 +19,7 @@ export default function About() {
                             <li className="font-bold">About
                             </li>
                         </ul>
-                    </p>
+                    </div>
                 </li>
             </ul>
 
