@@ -5,11 +5,15 @@ import { TaskContext } from "../state/task-context"
 export default function TaskItem({ task }) {
     const { updateTask } = useContext(TaskContext)
     const onUpdate = () => {
+        const updatedTask = task
+
         if (task.status === taskStatus.COMPLETE) {
-            updateTask({ ...task, status: taskStatus.TODO })
+            updatedTask.status = taskStatus.TODO
         } else {
-            updateTask({ ...task, status: taskStatus.COMPLETE })
+            updatedTask.status = taskStatus.COMPLETE
         }
+
+        updateTask(updatedTask)
     }
 
 
