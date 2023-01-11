@@ -9,6 +9,6 @@ export default function CompletedTaskItem({ task }) {
             checked
             disabled="disabled" />
         <p className='ml-2 font-medium w-full line-through'>{task.text}</p>
-        <button onClick={() => removeTask(task)} className="border-0 text-red-500">x</button>
+        <button onClick={() => removeTask(task)} className="border-0 text-grey-50">save</button>
     </label>
 }
