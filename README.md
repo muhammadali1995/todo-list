@@ -1,4 +1,4 @@
-This is task project with React.js
+React.js
 
 npm install 
 npm start
