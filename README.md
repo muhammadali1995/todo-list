@@ -1,4 +1,1 @@
-React.js
-
-npm install 
-npm start
+Simple react.js project
